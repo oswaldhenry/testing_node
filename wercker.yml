@@ -1,0 +1,5 @@
+build:
+  steps:
+    - npm-install
+    - npm-install mocha -g
+    - mocha UserHandlerTests.js
