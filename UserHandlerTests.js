@@ -37,6 +37,7 @@ describe('User Handler', function() {
 		this.request.get.callsArgWith(1, null, null, stubbedUserDetails)
 		this.userHandler.getUserDetails(user_id, function(err, userDetails){
 			userDetails.should.deep.equal(stubbedUserDetails)
+			"one".should.equal('two')
 			done()
 		});
 	})

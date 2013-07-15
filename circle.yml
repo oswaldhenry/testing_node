@@ -1,0 +1,22 @@
+## Customize the test machine
+machine:
+
+  nodejs:
+    version:
+      0.6.18
+
+  environment:
+    NODE_ENV: testing
+
+checkout:
+  post:
+    - node ./install-packages
+
+## Customize dependencies
+dependencies:
+  pre:
+    - install coffeescript # install from a different package manager
+
+
+
+
