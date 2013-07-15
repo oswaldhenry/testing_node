@@ -1,0 +1,7 @@
+:tddium:
+  :hooks:
+    :pre: npm install
+  :nodejs:
+    :version: '0.8.20'
+  :tests:
+    - mocha UserHandlerTests.js
