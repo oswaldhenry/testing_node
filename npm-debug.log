@@ -1,27 +1,40 @@
 info it worked if it ends with ok
-verbose cli [ 'node', '/Users/henry/.nvm/v0.6.19/bin/npm', 'install' ]
+verbose cli [ 'node', '/Users/henry/.nvm/v0.6.19/bin/npm', 'test' ]
 info using npm@1.1.24
 info using node@v0.6.19
 verbose config file /Users/henry/.npmrc
 verbose config file /Users/henry/.nvm/v0.6.19/etc/npmrc
 verbose config file /Users/henry/.nvm/v0.6.19/lib/node_modules/npm/npmrc
-ERR! Couldn't read dependencies.
-ERR! Failed to parse json
-ERR! Unexpected token }
-ERR! File: /Users/henry/Projects/node_unit_test_example_2/package.json
-ERR! JSON.parse Failed to parse package.json data.
-ERR! JSON.parse package.json must be actual JSON, not just JavaScript.
-ERR! JSON.parse This is not a bug in npm.
-ERR! JSON.parse Tell the package author to fix their package.json file.
+verbose caching /Users/henry/Projects/node_unit_test_example_2/package.json
+verbose loadDefaults node_unit_test_example@0.0.0
+verbose run-script [ 'pretest', 'test', 'posttest' ]
+info pretest node_unit_test_example@0.0.0
+info test node_unit_test_example@0.0.0
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "mocha"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'mocha' ],
+silly spawning   '/Users/henry/Projects/node_unit_test_example_2' ]
+info node_unit_test_example@0.0.0 Failed to exec test script
+ERR! node_unit_test_example@0.0.0 test: `mocha`
+ERR! `sh "-c" "mocha"` failed with 1
+ERR! 
+ERR! Failed at the node_unit_test_example@0.0.0 test script.
+ERR! This is most likely a problem with the node_unit_test_example package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     mocha
+ERR! You can get their info via:
+ERR!     npm owner ls node_unit_test_example
+ERR! There is likely additional logging output above.
 ERR! 
 ERR! System Darwin 11.4.0
-ERR! command "node" "/Users/henry/.nvm/v0.6.19/bin/npm" "install"
+ERR! command "node" "/Users/henry/.nvm/v0.6.19/bin/npm" "test"
 ERR! cwd /Users/henry/Projects/node_unit_test_example_2
 ERR! node -v v0.6.19
 ERR! npm -v 1.1.24
-ERR! file /Users/henry/Projects/node_unit_test_example_2/package.json
-ERR! code EJSONPARSE
-ERR! message Failed to parse json
-ERR! message Unexpected token }
+ERR! code ELIFECYCLE
+ERR! message node_unit_test_example@0.0.0 test: `mocha`
+ERR! message `sh "-c" "mocha"` failed with 1
 ERR! errno {}
 verbose exit [ 1, true ]
