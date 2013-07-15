@@ -2,7 +2,7 @@ sinon = require('sinon');
 chai = require('chai');
 should = chai.should();
 SandboxedModule = require('sandboxed-module');
-modulePath = "./UserHandler";
+modulePath = "../UserHandler";
 
 describe('User Handler', function() {
 
@@ -37,7 +37,6 @@ describe('User Handler', function() {
 		this.request.get.callsArgWith(1, null, null, stubbedUserDetails)
 		this.userHandler.getUserDetails(user_id, function(err, userDetails){
 			userDetails.should.deep.equal(stubbedUserDetails)
-			"one".should.equal('two')
 			done()
 		});
 	})
