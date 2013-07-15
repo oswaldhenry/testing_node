@@ -6,7 +6,8 @@
   "dependencies": {
     "chai": "~1.7.2",
     "sinon": "~1.7.3",
-    "sandboxed-module": "~0.2.1"
+    "sandboxed-module": "~0.2.1",
+"mocha" : "1.6.0"
   },
   "devDependencies": {},
   "optionalDependencies": {},
@@ -14,6 +15,6 @@
     "node": "*"
   },
    "scripts": {
-    "test": "mocha UserHandlerTests.js"
+    "test": "mocha"
   }
 }
