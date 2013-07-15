@@ -8,9 +8,6 @@ machine:
   environment:
     NODE_ENV: testing
 
-checkout:
-  post:
-    - node ./install-packages
 
 ## Customize dependencies
 dependencies:
